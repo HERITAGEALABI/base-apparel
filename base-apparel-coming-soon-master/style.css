@@ -1,14 +1,4 @@
-body{
-background-image: url(images/bg-pattern-desktop.svg);
-align-items: center;
-position: relative;
-display: flex;
-flex-direction: column;
-padding: 48px 0;
-margin: 0;
-width: 100%;
-height: 100%;
-}
+body{background-image: url(images/bg-pattern-desktop.svg);align-items: center;position: relative;display: flex;flex-direction: column;padding: 48px 0;margin: 0;width: 100%;height: 100vh;}
 /*Button*/
 a {
     text-decoration: none;
@@ -26,7 +16,10 @@ a {
     color: white;
   }
   .round {
-    border-radius: 40%;
+    border-radius: 65%;
+    position: relative;
+    bottom: 36px;
+left: 183px;
   }
 /*end of button*/
 
@@ -34,22 +27,7 @@ a {
     --form-width: 80vw;
     --max-form-width: 380px;
   }
-section{
-box-sizing: content-box;
-align-items: center;
-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
-display: flex;
-flex-direction: column;
-position: relative;
-padding: 20px;
-    margin: 30px;
-  height: 800px;
-  width: 800px;
-  border: 5px solid white;
-  background-color: white;
-
-justify-content: center;
-}
+section{contain: content;height: 80vh;box-sizing: content-box;align-items: center;box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);display: flex;flex-direction: column;position: relative;/* padding: 20px; *//* margin: 30px; *//* height: 800px; */width: 70vw;/* border: 5px solid white; */background-color: transparent;justify-content: center;}
 .logo{
     margin-bottom: 5%;
     margin-left: 180%;
@@ -72,8 +50,8 @@ span{
 justify-content: space-around;
 }
 p{
-    margin-top: 9%;
-    margin-left: 10%;
+    margin: auto;
+    /* margin-left: 10%; */
     color:  hsl(337, 48%, 61%);
 }
 input[type=email]{
@@ -89,11 +67,11 @@ form{
   
     position: relative;
 }
-.form{
-
-margin-left: -60%;
-    margin-top: -165%;
-  
+.form{margin-left: -60%;/* margin-top: -165%; */}
+form {
+    position: relative;
+    bottom: 100px;
+    right: 58px;
 }
 #icon{
     background-image: url('relative-path');
